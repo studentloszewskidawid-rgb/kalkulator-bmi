@@ -72,3 +72,33 @@ h1 {
 #calculate:hover {
   background: #1d4ed8;
 }
+
+#result {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+#result.success {
+  padding: 12px;
+  background: #e6f4ea;
+  color: #1e6b34;
+  border-radius: 6px;
+}
+
+#result.error {
+  padding: 12px;
+  background: #fdecea;
+  color: #a12622;
+  border-radius: 6px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+}
