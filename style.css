@@ -37,3 +37,38 @@ h1 {
   text-align: center;
   font-size: 1.6rem;
 }
+
+#bmi-form label {
+  display: block;
+  margin: 12px 0 4px;
+  font-weight: bold;
+}
+
+#bmi-form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #cbd2d9;
+  border-radius: 6px;
+}
+
+#bmi-form input:focus {
+  outline: 2px solid #3b82f6;
+  border-color: #3b82f6;
+}
+
+#calculate {
+  width: 100%;
+  margin-top: 16px;
+  padding: 12px;
+  font-size: 1rem;
+  color: #ffffff;
+  background: #2563eb;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#calculate:hover {
+  background: #1d4ed8;
+}
