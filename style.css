@@ -6,3 +6,99 @@
  * 3. Ostylować blok wyniku (#result).
  * 4. Dodać prosty wygląd responsywny (media query dla telefonów).
  */
+
+ * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eef2f7;
+  color: #1f2933;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin: 16px;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+#bmi-form label {
+  display: block;
+  margin: 12px 0 4px;
+  font-weight: bold;
+}
+
+#bmi-form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #cbd2d9;
+  border-radius: 6px;
+}
+
+#bmi-form input:focus {
+  outline: 2px solid #3b82f6;
+  border-color: #3b82f6;
+}
+
+#calculate {
+  width: 100%;
+  margin-top: 16px;
+  padding: 12px;
+  font-size: 1rem;
+  color: #ffffff;
+  background: #2563eb;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#calculate:hover {
+  background: #1d4ed8;
+}
+
+#result {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+#result.success {
+  padding: 12px;
+  background: #e6f4ea;
+  color: #1e6b34;
+  border-radius: 6px;
+}
+
+#result.error {
+  padding: 12px;
+  background: #fdecea;
+  color: #a12622;
+  border-radius: 6px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+}
